@@ -1,10 +1,12 @@
-.highscores {
-    display:inline-block;
+
+/* timer and seconds left on this class */
+.timer {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.timer {
-    display: inline-block;
-    width: 815px;
-    margin-left: 200px;
-    
+#welcome-screen {
+    display: grid;
+    place-content: center;
 }
