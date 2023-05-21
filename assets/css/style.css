@@ -5,8 +5,17 @@
     justify-content: space-between;
     
 }
-
+/* the home page screen */
 #welcome-screen {
     display: grid;
     place-content: center;
+}
+
+#Start:hover {
+    background-color: blueviolet;
+    
+}
+
+#backToHome:hover {
+    background-color: blueviolet;
 }
