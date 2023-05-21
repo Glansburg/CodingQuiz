@@ -1,0 +1,10 @@
+.highscores {
+    display:inline-block;
+}
+
+.timer {
+    display: inline-block;
+    width: 815px;
+    margin-left: 200px;
+    
+}

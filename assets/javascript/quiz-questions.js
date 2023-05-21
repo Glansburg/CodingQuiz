@@ -1,5 +1,5 @@
 var questions = {
-{
+
     question: "Which is not a js data type"
     choices: {'pickles', 'strings', 'booleans', 'integers'}
     answer: "pickles"
@@ -15,7 +15,7 @@ var questions = {
     answer: "pickles"
 }
 
-}
+
 
 
 questions[currentQuestion].question
