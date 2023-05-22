@@ -1,9 +1,30 @@
 // timer
-var countdown = function (num) {
-    
-    for (var i = num; i > 0; i--) {
+var timeE1 = document.getElementById("seconds")
+var startBtn = document.getElementById("Start")
+startBtn.addEventListener("click", countdown)
 
-        console.log[i];
-    }
+var timeLeft = 75
 
-};
+
+
+
+var timer
+
+
+
+
+
+//maybe change countdown to a function tomorrow?
+
+var countdown = function() {
+   timer = setInterval(function(){
+        timeLeft-- 
+        document.querySelector("#seconds").textContent=timeLeft
+        if (timeLeft === 0) {
+            clearInterval(timer)
+        }
+    },1000 )  
+  
+}
+
+
