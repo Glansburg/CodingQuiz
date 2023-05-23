@@ -5,16 +5,8 @@ startBtn.addEventListener("click", countdown)
 
 var timeLeft = 75
 
-
-
-
 var timer
 
-
-
-
-
-//maybe change countdown to a function tomorrow?
 
 var countdown = function() {
    timer = setInterval(function(){

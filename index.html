@@ -27,6 +27,8 @@
     <main id="quiz-container">
 
 
+        <!-- Div where questions will go on page from javascript-->
+        <div id="questionsDiv">
         <!-- Phase 1 -  showing landing page with instructions and start-->
         <section id="welcome-screen">
             <h2> Javascript Coding Quiz Game</h2>
@@ -38,11 +40,13 @@
             Are you ready!? Press the start button to proceed!
 
         </p>
-            
-        <button onclick="countdown(75)" id="Start">Start Quiz</button>
+         <!-- Where ul of question choices will begin-->   
+        <ul id="choicesUl"></ul>
+        <button id="Start">Start Quiz</button>
 
 
         </section>
+    </div>
        
  <!-- Phase 2 - Show each question, with possible responses as buttons -->
  <section id="quiz-questions">
