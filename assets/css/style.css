@@ -19,3 +19,7 @@
 #backToHome:hover {
     background-color: blueviolet;
 }
+
+.hidden {
+    display: none;
+}

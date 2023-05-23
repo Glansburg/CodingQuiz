@@ -26,10 +26,12 @@ var questions = [
     choices: ["Javascript", "terminal / bash", "for loops", "console log"],
     answer: "console log"
     },
-];
+]
 
 
-
+//function to display the next question
+// could make a for loop chocies event.target 
+// compare the choice with the question
 
 //questions[currentQuestion].question
 //questions[currentQuestion].choices
