@@ -1,7 +1,7 @@
 var questions = [
     {
 
-     question: "Which is not a js data type",
+     question: "Which of the following is not a js data type",
      choice: ['pickles', 'strings', 'booleans', 'integers'],
      answer: "pickles"
 },

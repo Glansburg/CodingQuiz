@@ -4,8 +4,10 @@ var startBtn = document.getElementById("Start")
 var instructionsContainer = document.getElementById("instruction-container")
 var quizQuestionsContainer = document.getElementById("quiz-questions")
 var quizChoiceContainer = document.getElementById("quizChoices")
-var test = document.getElementById("test")
-var tester = document.getElementById("tester")
+var choice1 = document.getElementById("choice1")
+var choice2 = document.getElementById("choice2")
+var choice3 = document.getElementById("choice3")
+var choice4 = document.getElementById("choice4")
 var questionIndex = 0;
 var choiceIndex = 0;
 
@@ -31,7 +33,10 @@ function getQuestion() {
 
 function getChoice() {
 var currentChoice = questions[choiceIndex]
-tester.textContent = currentChoice.choice
+choice1.textContent = currentChoice.choice[0]
+choice2.textContent = currentChoice.choice[1]
+choice3.textContent = currentChoice.choice[2]
+choice4.textContent = currentChoice.choice[3]
 instructionsContainer.setAttribute("class", "hidden")
 quizChoiceContainer.removeAttribute("class")
 
