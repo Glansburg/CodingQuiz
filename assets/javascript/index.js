@@ -8,8 +8,8 @@ var choice1 = document.getElementById("choice1")
 var choice2 = document.getElementById("choice2")
 var choice3 = document.getElementById("choice3")
 var choice4 = document.getElementById("choice4")
-var questionIndex = 0;
-var choiceIndex = 0;
+var questionIndex = 0
+var choiceIndex = 0
 
 
 var timeLeft = 75
