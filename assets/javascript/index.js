@@ -28,6 +28,8 @@ function getQuestion() {
     var currentQuestion = questions[questionIndex] 
     test.textContent = currentQuestion.question
     instructionsContainer.setAttribute("class", "hidden")
+    questionsFormat.removeAttribute("class", "hidden")
+    questionsFormat.setAttribute("id", "welcome-screen")
     quizQuestionsContainer.removeAttribute("class")
 }
 
@@ -37,7 +39,6 @@ choice1.textContent = currentChoice.choice[0]
 choice2.textContent = currentChoice.choice[1]
 choice3.textContent = currentChoice.choice[2]
 choice4.textContent = currentChoice.choice[3]
-instructionsContainer.setAttribute("class", "hidden")
 quizChoiceContainer.removeAttribute("class")
 
 }
@@ -56,3 +57,51 @@ function countdown(){
 }
 startBtn.addEventListener("click", startGame)
 
+
+
+
+
+
+
+//function questionClick(event) {
+    //var buttonEl = event.target;
+  
+    // if the clicked element is not a choice button, do nothing.
+    //if (!buttonEl.matches('.choice')) {
+      //return;
+    //}
+  //
+    // check if user guessed wrong
+    //if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+      // penalize time
+  
+      // display new time on page
+  
+      // display wrong message
+   // } else {
+      // display right message
+    //}
+  
+    // move to next question
+    //currentQuestionIndex++;
+  
+    // check if we've run out of questions
+    //if (time <= 0 || currentQuestionIndex === questions.length) {
+      //quizEnd();
+    //} else {
+      //getQuestion();
+    //}
+  //}
+
+
+
+  // clear out any old question choices
+  //c//hoicesEl.innerHTML = '';
+
+  // loop over choices
+  //for (var i = 0; i < currentQuestion.choices.length; i++) {
+    // create new button for each choice
+    //var choice = currentQuestion.choices[i];
+    //var choiceNode = document.createElement('button');
+    //choiceNode.setAttribute('class', 'choice');
+    //choiceNode.setAttribute('value', choice);

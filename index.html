@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Home Pages - Play the JS Quiz Game</title>
 </head>
+
 <body>
-<header>
-    <section class="timer" id="highscores">
-        <a href="highscores.html"> View High Scores</a>
-         <span id="seconds">75</span> 
-     
-    </section>
-    
-    
-</header>
-    <!-- display this container to display none on-->
-    <main >
-        <section  id="instruction-container">
-        <!-- Phase 1 -  showing landing page with instructions and start-->
-        <section id="welcome-screen">
-            <h2> Javascript Coding Quiz Game</h2>
-        <p><b>Instructions:</b><br>
-            You will receive 75 seconds to complete all the mutliple choice javascript questions.<br/>  
-            When you answer a question incorrectly, you will lose 15seconds from your original time.</br>
-            When all anwsers are corrected or timer reachers 0, the game is over.<br/>
-            When the game is over, save your initals to your high score!<br/>
-            Are you ready!? Press the start button to proceed!
-        </p>
-        <button id="Start">Start Quiz</button>
-        </section>
-         </section>
-       
- <!-- Phase 2 - Show each question, with possible responses as buttons -->
- <section id="quiz-questions" class = "hidden">
-<h2 id="test" > something</h2>
- </section>
-        <section id="quizChoices" class = "hidden">
-<button id = "choice1"> something</button>
-<button id = "choice2"> something</button>
-<button id = "choice3"> something</button>
-<button id = "choice4"> something</button>
+    <header>
+        <section class="timer" id="highscores">
+            <a href="highscores.html"> View High Scores</a>
+            <span id="seconds">75</span>
+
         </section>
 
-       
-        
- <!-- Phase 3 end game screen, show Quiz Complete! show final score (seconds remaining), input box for initials and to submit score to highscores.-->
+
+    </header>
+    <!-- display this container to display none on-->
+    <main>
+        <section id="instruction-container">
+            <!-- Phase 1 -  showing landing page with instructions and start-->
+            <section id="welcome-screen">
+                <h2> Javascript Coding Quiz Game</h2>
+                <p><b>Instructions:</b><br>
+                    You will receive 75 seconds to complete all the mutliple choice javascript questions.<br />
+                    When you answer a question incorrectly, you will lose 15seconds from your original time.</br>
+                    When all anwsers are corrected or timer reachers 0, the game is over.<br />
+                    When the game is over, save your initals to your high score!<br />
+                    Are you ready!? Press the start button to proceed!
+                </p>
+                <button id="Start">Start Quiz</button>
+            </section>
+        </section>
+
+        <!-- Phase 2 - Show each question, with possible responses as buttons -->
+        <div id="questionsFormat" class ="hidden">
+            <section id="quiz-questions" class="hidden">
+                <h2 id="test"> something</h2>
+            </section>
+            <section id="quizChoices" class="hidden">
+                <button id="choice1"> something</button>
+                <button id="choice2"> something</button>
+                <button id="choice3"> something</button>
+                <button id="choice4"> something</button>
+            </section>
+        </div>
+
+
+        <!-- Phase 3 end game screen, show Quiz Complete! show final score (seconds remaining), input box for initials and to submit score to highscores.-->
 
     </main>
-<script src="./assets/javascript/quiz-questions.js"></script>
-<script src="./assets/javascript/index.js"></script>
+    <script src="./assets/javascript/quiz-questions.js"></script>
+    <script src="./assets/javascript/index.js"></script>
 </body>
+
 </html>

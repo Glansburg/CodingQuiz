@@ -22,4 +22,16 @@
 
 .hidden {
     display: none;
+   
 }
+
+#quizChoices {
+  
+}
+
+/* the home page screen */
+.welcome-screen, .test, .quizChoices  {
+    display: grid;
+    place-content: center;
+}
+
